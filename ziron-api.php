@@ -37,6 +37,12 @@ Class Ziron {
 
 	}
 	
+	public function lookup($parameters) {
+		
+		return $this->sendRequest('/Lookups',http_build_query($parameters),'POST');
+				
+	}
+	
 }
 
 ?>
