@@ -52,7 +52,7 @@ Class Ziron {
 				
 	}
 	
-	public function message_send($paramaters) {
+	public function message_send($parameters) {
 		
 		return $this->sendRequest('/Messages',http_build_query($parameters),'POST');
 	}
