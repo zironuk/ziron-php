@@ -13,6 +13,15 @@ Class Ziron {
 		$this->z_sid = $z_sid;
 		$this->z_authkey = $z_authkey;
 		$this->baseurl = $z_baseurl;
+		
+		if (!$this->z_sid) {
+			throw new exception('Error: missing sid');
+		}
+		
+		if (!$this->z_authkey) {
+			throw new exception('Error: missing authkey');
+		}
+				
 	}
 	
 	private function sendRequest($resource,$parameters,$method) {
@@ -43,6 +52,10 @@ Class Ziron {
 				
 	}
 	
+	public function message_send($paramaters) {
+		
+		return $this->sendRequest('/Messages',http_build_query($parameters),'POST');
+	}
 }
 
 ?>
