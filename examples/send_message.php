@@ -18,7 +18,7 @@ $message['data'] = ""; // message body
 
 // Set optional parameters
 $message['message_type'] = "sms"; // if missing defaults to SMS
-$message['dlr-url'] = ""; // URL to receive message delivery notifications
+$message['callback_url'] = ""; // URL to receive message delivery notifications
 
 // Send the message
 $result = $Ziron->message_send($message);
