@@ -1,0 +1,17 @@
+{
+    "name": "zironuk/ziron-php",
+    "description": "PHP helper library for Ziron API [https://www.ziron.com]",
+    "require": {
+        "ext-curl": "~0.0"
+    },
+    "require-dev": {
+        "ext-curl": "~0.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alex Kinch",
+            "email": "alex.kinch@ziron.com"
+        }
+    ]
+}
